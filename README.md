@@ -1,138 +1,85 @@
-Write a code of implement layout
-structures  using colum widget  in  flutter?
+radius=5.0
+perimeter=0.0
+area=0.0
+print"input the radius of the circle"
+radius=gets.to_f
+perimeter=2*3.14*radius
+area=3.14*radius*radius
+puts"The perimeter is #{perimeter}:"
+puts"The area is #{area}:"
 
-import 'package:flutter/material.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Column Widget Layout'),
-        ),
-        body: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                height: 100,
-                width: double.infinity,
-                color: Colors.blue,
-                child: Center(
-                  child: Text(
-                    'Header',
-                    style: TextStyle(color: Colors.white, fontSize: 20),
-                  ),
-                ),
-              ),
-              Container(
-                height: 100,
-                width: double.infinity,
-                color: Colors.green,
-                child: Center(
-                  child: Text(
-                    'Content Area',
-                    style: TextStyle(color: Colors.white, fontSize: 20),
-                  ),
-                ),
-              ),
-              Container(
-                height: 100,
-                width: double.infinity,
-                color: Colors.red,
-                child: Center(
-                  child: Text(
-                    'Footer',
-                    style: TextStyle(color: Colors.white, fontSize: 20),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
+output:input the radius of the circle5.0
+The perimeter is 31.400000000000002:
+The area is 78.5:
 
 
-Write a code of Implement flutter
-image widget in Flutter ?
+2)puts"input your first name"
+fname=gets.chomp
+puts"input your last name"
+lname=gets.chomp
+puts "Hello #{lname} #{fname}"
 
-import 'package:flutter/material.dart';
+ouput:ruby reverse.rb
+input your first name
+kallepally 
+input your last name
+srinivas
+Hello srinivas kallepally 
 
-void main() {
-  runApp(MyApp());
-}
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter Image Widget'),
-        ),
-        body: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              // Display an image from the network
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Image.network(
-                  'https://flutter.dev/assets/homepage/carousel/slide_1-layer_1-6071fb16a5d2d9c3e82864e45f63738f73b31a2933b52e0ac232c5f2dfd74a87.png',
-                  height: 200,
-                  width: double.infinity,
-                  fit: BoxFit.cover,
-                ),
-              ),
 
-              // Display an image from assets
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Image.asset(
-                  'assets/images/sample.png', // Ensure the image is added to pubspec.yaml
-                  height: 200,
-                  width: double.infinity,
-                  fit: BoxFit.cover,
-                ),
-              ),
+3)puts"odd numbers between 9 to 1:"
+9.step 1,-2 do|x|
+puts "#{x}"
+end
 
-              // Display a placeholder image with circular shape
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: ClipOval(
-                  child: Image.network(
-                    'https://via.placeholder.com/150',
-                    height: 150,
-                    width: 150,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
 
-              // Display an image from memory (example with placeholder)
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  color: Colors.grey[300],
-                  child: Center(
-                    child: Text('Memory Image Placeholder'),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
+output:ruby oddnumbers.rb
+odd numbers between 9 to 1:
+9
+7
+5
+3
+1
+
+
+4)def makes20(x,y)
+return x==20||y==20|| x+y==20
+end
+
+print makes20(10,10),"\n"
+print makes20(40,10),"\n"
+print makes20(15,20) 
+
+
+
+Output:ruby return20.rb
+true
+false
+true
+
+5)def temp(temp1,temp2)
+return(temp1<0&&temp2>100)||(temp1>100&&temp2<0)
+end
+print temp(110,-1),"\n"
+print temp(-1,110),"\n"
+print temp(2,120)
+
+
+output:ruby temp.rb
+true
+true
+false
+
+
+9)array1=["ruby",2.3,Time.now]
+for array_element in array1
+puts array_element
+end
+
+
+output:
+ruby  printelements.rb
+ruby
+2.3
+2025-04-04 12:25:55 +0530
